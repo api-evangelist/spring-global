@@ -1,8 +1,26 @@
 aid: spring-global
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/spring-global.png
 name: Spring Global
-description: 'Spring Global is a company surfaced as a portfolio company of sapphire-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: saas. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Spring Global is an AI field intelligence platform for the consumer
+  packaged goods (CPG) industry, marketed as an AI operating system for the CPG field
+  workforce. Its Field Intelligence Platform provides real-time AI coaching for field
+  representatives, drivers, and merchandisers, compliance validation and break-adherence
+  monitoring, automated communication with personalized recommendations, image recognition,
+  and custom workflow automation. The platform is built on modern enterprise infrastructure
+  (Node.js, React, AWS) and integrates with existing mobile workforce management, ERP,
+  and retail systems rather than replacing them. Spring Global is backed by Sapphire
+  Ventures. No public API, developer portal, or OpenAPI definition is currently published.'
 url: https://raw.githubusercontent.com/api-evangelist/spring-global/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-- Saas
+- SaaS
+- CPG
+- Retail Execution
+- Field Workforce
+- Merchandising
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/spring-global-domain-security.yml
 - type: Website
   url: https://springglobal.com/
+- type: TermsOfService
+  url: https://springglobal.com/terms-conditions/
+- type: Support
+  url: https://springglobal.com/contact/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
